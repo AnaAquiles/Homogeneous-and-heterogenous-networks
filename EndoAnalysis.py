@@ -19,7 +19,7 @@ import pandas as pd
 import seaborn as sns 
 
 
-filename="Nif-GnRH"                                                            
+filename="YourFile"                                                            
 data=np.loadtxt(filename + ".csv",delimiter=',')
 
 # Cuando se tengan tratamientos del mismo tamaño de imagen,descomentar con
@@ -29,7 +29,7 @@ data=np.loadtxt(filename + ".csv",delimiter=',')
 datos = np.array([data[280:420]]) #en data:, colocar el número correspondiente al límite de la primera adquisición, seguido de :
 datos = np.swapaxes(datos,0,1)
     
-i = 140  # límite donde la actiidad basal se termina
+i = 140  # límite donde la actividad basal se termina
 #Normalization respect the baseline: 
 
 def NormF(datos):
